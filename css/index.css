@@ -1,0 +1,113 @@
+.grid{
+    margin: 10px auto;
+    height: 480px;
+    background-color: rgb(244,244,244);
+}
+.grid-col1{
+    width: 190px;
+    height: 100%;
+    background-color: rgb(254, 254, 254);
+    color: #000;
+    font-size: 14px;
+    color: #333;
+}
+.grid-col1 a{
+    font-size: 14px;
+    color: #333;
+    margin: 0px 3px ;
+}
+.grid-col1 a:hover{
+    color: #f10215;
+}
+.grid-col1 ul{
+    padding: 15px 0px ;
+
+}
+.grid-col1 ul li{
+    padding-left: 12px;
+    height: 25px;
+    line-height: 26px;
+    transition: .2s;
+}
+.grid-col1 ul li:hover{
+    background-color: #d9d9d9;
+}
+.grid-col2{
+    margin-top: 6px;
+    width: 790px;
+    height: 100%;
+    background-color: rgb(244, 244, 244);
+    margin-left: 10px;
+    display: flex;
+}
+.grid-col2-l{
+    /* float: left; */
+    height: 100%;
+    position: relative;
+}
+.grid-col2-r{
+    /* float: right; */
+    height: 100%;
+    /* background-color: rgb(254, 254, 254); */
+}
+.grid-col2-r img{
+    width: 190px;
+    height: 150px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+/* 箭头部分 */
+.grid-col2-l .arrow-1{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 25px;
+    height: 35px;
+    background-color: #fff;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    color: #000;
+    opacity: 0.3;
+}
+.grid-col2-l .arrow-2{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 25px;
+    height: 35px;
+    background-color: #fff;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    color: #000;
+    opacity: 0.3;
+}
+.grid-col2-l .circle{
+    width: 109px;
+    height: 13.8px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: pink; */
+
+}
+.grid-col2-l .circle li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(244, 244, 244,.3);
+}
+.grid-col2-l .circle li:hover{
+    background-color:white;
+}
+.grid-col3{
+    width: 190px;
+    height: 100%;
+    background-color:blue;
+
+}
