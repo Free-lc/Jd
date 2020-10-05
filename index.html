@@ -39,24 +39,58 @@
                     <a href="#">我的订单</a>
                 </li>
                 <li class="space"></li>
-                <li>
+                <li class="dropdown1 dropdown">
                     <a href="#">我的京东<img src="fonts/向下箭头.png" alt=""></a>
+                    <ul style="display:none;">
+                        <li><a href="#">待处理订单</a></li>
+                        <li><a href="#">消息</a></li>
+                        <li><a href="#">返修退换货</a></li>
+                        <li><a href="#">我的回答</a></li>
+                        <li><a href="#">降价商品</a></li>
+                        <li><a href="#">我的关注</a></li>
+                    </ul>
                 </li>
                 <li class="space"></li>
                 <li>
                     <a href="#">京东会员</a>
                 </li>
                 <li class="space"></li>
-                <li>
+                <li class="dropdown2 dropdown">
                     <a href="#"  style="color: #f10215;">企业采购<img src="fonts/向下箭头.png" alt=""></a>
+                    <ul style="display:none;">
+                        <li><a href="#">企业购</a></li>
+                        <li><a href="#">商用场景馆</a></li>
+                        <li><a href="#">工业品</a></li>
+                        <li><a href="#">丰客多商城</a></li>
+                        <li><a href="#">礼品卡</a></li>
+                        <li><a href="#">微信企业购</a></li>
+                    </ul>
                 </li>
                 <li class="space"></li>
-                <li>
+                <li class="dropdown3 dropdown">
                     <a href="#">客户服务<img src="fonts/向下箭头.png" alt=""></a>
+                    <ul style="display:none;">
+                        <h5>商户</h5>
+                        <li><a href="#">合作招商</a></li>
+                        <li><a href="#">成长中心</a></li>
+                        <li><a href="#">商家后台</a></li>
+                        <li><a href="#">京麦工作台</a></li>
+                        <li><a href="#">商家帮助</a></li>
+                        <li><a href="#">规则后台</a></li>
+                    </ul>
                 </li>
                 <li class="space"></li>
-                <li>
+                <li class="dropdown4 dropdown">
                     <a href="#">网页导航<img src="fonts/向下箭头.png" alt=""></a>
+                    <ul style="display:none;">
+                        <h5>生活频道</h5>
+                        <li><a href="#">手机免息节</a></li>
+                        <li><a href="#">全球购</a></li>
+                        <li><a href="#">白条</a></li>
+                        <li><a href="#">合作招商</a></li>
+                        <li><a href="#">京东E卡</a></li>
+                        <li><a href="#">校园加盟</a></li>
+                    </ul>
                 </li>
                 <li class="space"></li>
                 <li>
@@ -326,4 +360,32 @@
         </div>
     </div>
 </body>
+<script>
+    var nav = document.querySelector("#shortcut_right");
+    var lis = nav.children;
+    lis[4].onmouseover = function(){
+        this.children[1].style.display = 'block';
+    }
+    lis[8].onmouseover = function(){
+        this.children[1].style.display = 'block';
+    }
+    lis[10].onmouseover = function(){
+        this.children[1].style.display = 'block';
+    }
+    lis[12].onmouseover = function(){
+        this.children[1].style.display = 'block';
+    }
+    lis[4].onmouseout = function(){
+        this.children[1].style.display = 'none';
+    }
+    lis[8].onmouseout = function(){
+        this.children[1].style.display = 'none';
+    }
+    lis[10].onmouseout = function(){
+        this.children[1].style.display = 'none';
+    }
+    lis[12].onmouseout = function(){
+        this.children[1].style.display = 'none';
+    }
+</script>
 </html>

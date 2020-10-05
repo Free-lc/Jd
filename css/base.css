@@ -59,6 +59,34 @@ header img{
 }
 #shortcut_right li{
     float: left;
+    position: relative;
+}
+#shortcut_right .dropdown:hover{
+    background-color: #fff;
+     border: 0.3px solid rgb(214, 210, 210);
+    border-top:none ;
+}
+#shortcut_right .dropdown ul{
+    background-color: #fff;
+    width: 260px;
+    position: absolute;
+    left: 0px;
+    top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.3px solid rgb(214, 210, 210);
+    border-top:none ;
+    z-index: 999;
+}
+#shortcut_right .dropdown ul h5{
+    margin-left: 10px;
+}
+#shortcut_right .dropdown ul li{
+    text-align: center;
+    width: 126px;
+    height: 24px;
+    line-height: 24px;
+    
 }
 .space{
     width: 1px;
