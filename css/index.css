@@ -49,6 +49,22 @@ h5,p{
     /* float: left; */
     height: 100%;
     position: relative;
+    overflow: hidden;
+}
+.grid-col2-l .focusul{
+    height: 100%;
+    width: 900%;
+    position: relative;
+    top:  0;
+    left: 0;
+    
+}
+.grid-col2-l ul li{
+    float: left;
+}
+.grid-col2-l ul li img{
+    width: 590px;
+    height: 470px;
 }
 .grid-col2-r{
     /* float: right; */
@@ -68,13 +84,17 @@ h5,p{
     left: 0px;
     width: 25px;
     height: 35px;
-    background-color: #fff;
+    background-color: #000;
     transform: translateY(-50%);
     text-align: center;
     line-height: 35px;
     font-size: 20px;
-    color: #000;
-    opacity: 0.3;
+    color: white;
+    opacity: 0.1;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    cursor: pointer;
+
 }
 .grid-col2-l .arrow-2{
     position: absolute;
@@ -82,13 +102,16 @@ h5,p{
     right: 0px;
     width: 25px;
     height: 35px;
-    background-color: #fff;
+    background-color: #000;
     transform: translateY(-50%);
     text-align: center;
     line-height: 35px;
     font-size: 20px;
-    color: #000;
-    opacity: 0.3;
+    color: white;
+    opacity: 0.1;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    cursor: pointer;
 }
 .grid-col2-l .circle{
     width: 109px;
@@ -99,7 +122,7 @@ h5,p{
     display: flex;
     justify-content: space-around;
     /* background-color: pink; */
-
+ 
 }
 .grid-col2-l .circle li{
     width: 10px;
@@ -107,8 +130,11 @@ h5,p{
     border-radius: 50%;
     background-color: rgb(244, 244, 244,.3);
 }
-.grid-col2-l .circle li:hover{
+/* .grid-col2-l .circle li:hover{
     background-color:white;
+} */
+.grid-col2-l .circle .current{
+    background-color: #fff;
 }
 .grid-col3{
     width: 190px;
@@ -191,7 +217,7 @@ h5,p{
     width: 45px;
     height: 21px;
     display: inline-block;
-    float: right;
+    /* float: right; */
     font-size: 12px;
     line-height: 20px;
     padding-bottom: 10px;

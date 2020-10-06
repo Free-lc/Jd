@@ -30,14 +30,60 @@ a{
 a:hover {
     color: #e33333;
 }
+/* 右侧侧边栏设置 */
+.sider-bar{
+    background-color: #fff;
+    position: absolute;
+    top: 268px;
+    right: 90px;
+}
+
+.sider-bar li{
+   padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width: 28px;
+    height: 38px;
+    line-height: 19px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    border-bottom:1px solid  rgb(136,136,136,0.3);
+}
+.sider-bar .red{
+    color: #e33333;
+}
+.sider-bar li:hover{
+    background-color: #e33333;
+    color: #fff;
+}
+.sider-bar li img{
+    width: 16px;
+    height: 16px;
+    margin: 0px auto;
+}
 /* header部分样式 */
 header{
     height: 80px;
     background-color: #072557;
+    display: block;
+}
+header .w{
+    position: relative;
 }
 header img{
     width: 1190px;
     height: 78px;
+}
+header button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(214, 210, 210,0.3);
+    border-radius: 4px;
 }
 /* 快速导航栏设置 */
 .shortcut{
@@ -66,6 +112,7 @@ header img{
      border: 0.3px solid rgb(214, 210, 210);
     border-top:none ;
 }
+
 #shortcut_right .dropdown ul{
     background-color: #fff;
     width: 260px;
@@ -87,6 +134,28 @@ header img{
     height: 24px;
     line-height: 24px;
     
+}
+#shortcut_right .dropdown5 ul{
+    width: 190px;
+    height: 404px;
+}
+#shortcut_right .dropdown5 ul li{
+    width: 190px;
+    height: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.3px solid rgb(214, 210, 210);
+
+}
+#shortcut_right .dropdown5 li img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding-left: 10px;
+}
+#shortcut_right .dropdown5 .fonts img{
+    width: 20px;
+    height: 20px;
 }
 .space{
     width: 1px;

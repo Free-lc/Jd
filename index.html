@@ -12,14 +12,29 @@
     <!-- 引入公共部分 -->
     <link rel="stylesheet" href="css/index.css">
     <!-- 引入主页部分 -->
+    <script src="js/index.js"></script>
+    <!-- 引入一个移动动画 -->
+    <script src="js/animaerial.js"></script>
+    <!-- 引入首页的js文件 -->
     <title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
 </head>
 <body>
+    <!-- 设置右侧固定层 -->
+    <ul class="sider-bar">
+        <li class="red">京东秒杀</li>
+        <li>特色优选</li>
+        <li>频道广场</li>
+        <li>为你推荐</li>
+        <li><img src="fonts/jdg2.png" alt="">客户</li>
+        <li><img src="fonts/笔.png" alt="">反馈</li>
+        <li class="GoBack red" style="display: none;"><img src="fonts/向上箭头.png" alt="">顶部</li>
+    </ul>
     <!-- 设置头部 -->
-    <header>
+    <header id="header">
         <div class="w">
             <a href="#">
                 <img src="img/header.jpg" height="80px" width="1490px"alt="">
+                <button class="banner_button"><span>X</span></button>
             </a>
         </div>
     </header>
@@ -93,8 +108,43 @@
                     </ul>
                 </li>
                 <li class="space"></li>
-                <li>
+                <li class="dropdown5 dropdown">
                     <a href="#">手机京东</a>
+                    <ul style="display:none;">
+                        <li><img src="img/qr1.png" alt="">
+                            <h5 style="color: black;float: left;">关注京东</h5>
+                            <p style="color: #f10215;float: left;margin-left: 10px;">新人专享大礼包</p>
+                            <div class="fonts">
+                                <img src="fonts/安卓.png" alt="">
+                                <img src="fonts/iphone.png" alt="">
+                                <img src="fonts/ipad.png" alt="">
+                            </div>
+                        </li>
+                        <li><img src="img/qr2.png" alt="">
+                            <h5 style="color: black;float: left;">关注京东</h5>
+                            <p style="color: #f10215;float: left;margin-left: 10px;">新人专享大礼包</p>
+                            <div class="fonts">
+                                <img src="fonts/安卓.png" alt="">
+                                <img src="fonts/iphone.png" alt="">
+                                <img src="fonts/ipad.png" alt="">
+                            </div></li>
+                        <li><img src="img/qr3.jpg" alt="">
+                            <h5 style="color: black;float: left;">关注京东</h5>
+                            <p style="color: #f10215;float: left;margin-left: 10px;">新人专享大礼包</p>
+                            <div class="fonts">
+                                <img src="fonts/安卓.png" alt="">
+                                <img src="fonts/iphone.png" alt="">
+                                <img src="fonts/ipad.png" alt="">
+                            </div></li>
+                        <li><img src="img/qr4.png" alt="">
+                            <h5 style="color: black;float: left;">关注京东</h5>
+                            <p style="color: #f10215;float: left;margin-left: 10px;">新人专享大礼包</p>
+                            <div class="fonts">
+                                <img src="fonts/安卓.png" alt="">
+                                <img src="fonts/iphone.png" alt="">
+                                <img src="fonts/ipad.png" alt="">
+                            </div></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -177,18 +227,23 @@
         </div>
         <div class="grid-col2 fl">
             <div class="grid-col2-l">
-                <a href="#"><img src="./img/banner.jpg" alt=""></a>
-                <a href="#" class="arrow-1">></a>
-                <a href="#" class="arrow-2"><</a>
+                <ul class="focusul">
+                    <!-- <a href="#"><img src="./img/focus1.jpg" alt=""></a> -->
+                    <li><a href=""><img src="./img/focus1.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/focus2.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/focus3.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/focus4.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/focus5.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/focus6.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/focus7.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/focus8.jpg" alt=""></a></li>
+                 
+
+                </ul>
+                <div class="arrow-1">></div>
+                <div class="arrow-2"><</div>
                 <ul class="circle">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    
                 </ul>
             </div>
             <div class="grid-col2-r">
@@ -361,8 +416,13 @@
     </div>
 </body>
 <script>
+    // 设置下拉菜单
     var nav = document.querySelector("#shortcut_right");
     var lis = nav.children;
+    var QRimg = document.getElementsByClassName("QRCode")
+    QRimg.onmouseover = function(){
+        lis[14].children[1].style.display = 'block';
+    }
     lis[4].onmouseover = function(){
         this.children[1].style.display = 'block';
     }
@@ -373,6 +433,9 @@
         this.children[1].style.display = 'block';
     }
     lis[12].onmouseover = function(){
+        this.children[1].style.display = 'block';
+    }
+    lis[14].onmouseover = function(){
         this.children[1].style.display = 'block';
     }
     lis[4].onmouseout = function(){
@@ -387,5 +450,47 @@
     lis[12].onmouseout = function(){
         this.children[1].style.display = 'none';
     }
+    lis[14].onmouseout = function(){
+        this.children[1].style.display = 'none';
+    }
+    // 设置广告图
+    var header = document.getElementById("header");
+    var banner = document.querySelector(".banner_button");
+    var siderbar = document.querySelector(".sider-bar");
+    var middlew = document.querySelector(".middle_w");
+    var shortcut = document.querySelector(".shortcut");
+    var grid = document.querySelector(".grid");
+    banner.onclick = function(){
+        header.style.display = "none";
+        siderbar.style.top = "188px" ;
+    }
+    console.log(lis[14]);
+
+    //设置侧边栏
+    var GoBack = document.querySelector(".GoBack");
+    var footer = document.querySelector(".footer");
+    var service = document.querySelector(".service");
+    var footerTop = footer.offsetTop;
+    var Toplength = grid.offsetTop-60;     //达到此高度时进行fixed
+    // var siderbarTop = siderbar.offsetTop - Toplength;
+    document.addEventListener('scroll',function(){
+        //当页面被向上卷去249，就要改为固定定位
+        if(window.pageYOffset >= Toplength){
+            siderbar.style.position = 'fixed';
+            siderbar.style.top = "60px";
+        }
+        else{
+            siderbar.style.position = 'absolute';
+            siderbar.style.top = "268px";
+        }
+        //超过footer范围显示回到顶部按钮
+        if(window.pageYOffset >= footerTop-300){
+            GoBack.style.display = 'block';
+        }
+        else{
+            GoBack.style.display = 'none'
+        }
+
+    })
 </script>
 </html>
