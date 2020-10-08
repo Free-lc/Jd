@@ -15,12 +15,12 @@ window.addEventListener("load", function () {
   }
 
   // 设置广告图
-  var header = document.getElementById("header");
-  var banner = document.querySelector(".banner_button");
-  var siderbar = document.querySelector(".sider-bar");
-  var middlew = document.querySelector(".middle_w");
-  var shortcut = document.querySelector(".shortcut");
-  var grid = document.querySelector(".grid");
+  const header = document.getElementById("header");
+  const banner = document.querySelector(".banner_button");
+  const siderbar = document.querySelector(".sider-bar");
+  const middlew = document.querySelector(".middle_w");
+  const shortcut = document.querySelector(".shortcut");
+  const grid = document.querySelector(".grid");
   banner.onclick = function(){
       header.style.display = "none";
       siderbar.style.top = "188px" ;
@@ -28,11 +28,11 @@ window.addEventListener("load", function () {
   console.log(lis[14]);
 
   //设置侧边栏
-  var GoBack = document.querySelector(".GoBack");
-  var footer = document.querySelector(".footer");
-  var service = document.querySelector(".service");
-  var footerTop = footer.offsetTop;
-  var Toplength = grid.offsetTop-60;     //达到此高度时进行fixed
+  let GoBack = document.querySelector(".GoBack");
+  let footer = document.querySelector(".footer");
+  let service = document.querySelector(".service");
+  let footerTop = footer.offsetTop;
+  let Toplength = grid.offsetTop-60;     //达到此高度时进行fixed
   // var siderbarTop = siderbar.offsetTop - Toplength;
   document.addEventListener('scroll',function(){
       //当页面被向上卷去249，就要改为固定定位
@@ -61,12 +61,12 @@ window.addEventListener("load", function () {
   
   //轮播图制作
   // 获取元素
-  var arrow_1 = document.querySelector(".arrow-1");
-  var arrow_2 = document.querySelector(".arrow-2");
-  var grid_col2_l = document.querySelector(".grid-col2-l");
-  var ul = grid_col2_l.querySelector("ul");
-  var circle = document.querySelector(".circle");
-  var focusWidth = ul.children[0].offsetWidth;
+  let arrow_1 = document.querySelector(".arrow-1");
+  let arrow_2 = document.querySelector(".arrow-2");
+  let grid_col2_l = document.querySelector(".grid-col2-l");
+  let ul = grid_col2_l.querySelector("ul");
+  let circle = document.querySelector(".circle");
+  let focusWidth = ul.children[0].offsetWidth;
   //js实现鼠标悬停改变箭头颜色
   arrow_1.onmouseover = function () {
     this.style.opacity = "0.4";
@@ -102,11 +102,11 @@ window.addEventListener("load", function () {
   }
   circle.children[0].className = "current";
   //克隆第一个图
-  var first = ul.children[0].cloneNode(true);
+  let first = ul.children[0].cloneNode(true);
   ul.appendChild(first);
-  var num = 0;
+  let num = 0;
   //表示惦记的次数
-  var follow = 0; //控制小圆点播放
+  let follow = 0; //控制小圆点播放
   //点击箭头移动图片
   arrow_2.addEventListener("click", function () {
     if (num == ul.children.length - 1) {
@@ -138,7 +138,7 @@ window.addEventListener("load", function () {
   });
 
   //自动播放录播图
-  var timer = setInterval(function () {
+  let timer = setInterval(function () {
     arrow_2.click(); //手动调用点击事件
   }, 2000);
   //鼠标悬停停止滚动
